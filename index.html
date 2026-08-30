@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>우리집 워크북 — 무료 샘플 5장</title>
-<meta name="description" content="5~7세 한글·수 워크북. 샘플 5장을 그냥 받아 보세요. 이메일 안 받습니다.">
+<meta name="description" content="3~9세 프린트 워크북. 나이에 맞는 샘플 5장을 그냥 받아 보세요. 이메일 안 받습니다.">
 <meta property="og:title" content="우리집 워크북 — 무료 샘플 5장">
 <meta property="og:description" content="하루 세 장, 15분. 프린트해서 주기만 하면 됩니다.">
 <meta property="og:type" content="website">
@@ -12,94 +12,107 @@
 :root{
   --paper:#FBF8F3; --card:#FFFFFF; --ink:#221F26; --sub:#6E6C76;
   --line:#E6E2DA; --acc:#3C68B8; --acc-ink:#FFFFFF; --gold:#E8B84B;
+  --a35:#D8697B; --a57:#3C68B8; --a79:#2E8B6B;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{
-  background:var(--paper); color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
-              "Noto Sans KR",sans-serif;
-  line-height:1.62; -webkit-font-smoothing:antialiased;
-  padding-bottom:96px;
-}
-.wrap{max-width:640px;margin:0 auto;padding:0 20px}
-header{padding:44px 0 8px;text-align:center}
-.eyebrow{font-size:14px;letter-spacing:.12em;color:var(--sub);font-weight:600}
-h1{font-size:34px;line-height:1.28;margin:14px 0 10px;letter-spacing:-.02em;text-wrap:balance}
+body{background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  line-height:1.62;-webkit-font-smoothing:antialiased;padding-bottom:40px}
+.wrap{max-width:660px;margin:0 auto;padding:0 20px}
+header{padding:46px 0 6px;text-align:center}
+.eyebrow{font-size:14px;letter-spacing:.12em;color:var(--sub);font-weight:600;margin:0}
+h1{font-size:33px;line-height:1.3;margin:14px 0 10px;letter-spacing:-.02em;text-wrap:balance}
 h1 em{font-style:normal;color:var(--acc)}
-.lede{font-size:17px;color:var(--sub);margin:0 0 26px}
-.cta{
-  display:block;width:100%;padding:20px 18px;border-radius:16px;
-  background:var(--acc);color:var(--acc-ink);text-decoration:none;
-  font-size:19px;font-weight:700;text-align:center;border:0;
-  box-shadow:0 6px 18px rgba(60,104,184,.22);
-}
-.cta:active{transform:translateY(1px)}
-.cta small{display:block;font-weight:500;font-size:13px;opacity:.86;margin-top:5px}
-.note{font-size:13.5px;color:var(--sub);text-align:center;margin:12px 0 0}
-section{margin:44px 0}
-h2{font-size:21px;margin:0 0 14px;letter-spacing:-.01em}
-.strip{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;
-       scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-.strip::-webkit-scrollbar{height:6px}
-.strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
-.strip figure{margin:0;flex:0 0 auto;scroll-snap-align:center;width:190px}
-.strip img{width:100%;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
-.strip figcaption{font-size:13px;color:var(--sub);margin-top:7px;text-align:center}
-table{width:100%;border-collapse:collapse;font-size:15.5px}
-td{padding:13px 2px;border-bottom:1px solid var(--line);vertical-align:top}
-td:first-child{color:var(--sub);width:36%;white-space:nowrap}
-ul{padding-left:20px;margin:0}
-li{margin:9px 0}
-.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-.price{display:flex;align-items:baseline;gap:10px;margin:2px 0 14px}
+.lede{font-size:17px;color:var(--sub);margin:0 0 6px}
+section{margin:40px 0}
+h2{font-size:21px;margin:0 0 6px;letter-spacing:-.01em}
+.h2sub{font-size:14.5px;color:var(--sub);margin:0 0 18px}
+.book{background:var(--card);border:1px solid var(--line);border-radius:16px;
+      padding:20px;margin-bottom:16px}
+.book.b35{border-top:4px solid var(--a35)}
+.book.b57{border-top:4px solid var(--a57)}
+.book.b79{border-top:4px solid var(--a79)}
+.age{font-size:13px;font-weight:700;letter-spacing:.06em;margin:0 0 4px}
+.b35 .age{color:var(--a35)} .b57 .age{color:var(--a57)} .b79 .age{color:var(--a79)}
+.bt{font-size:19px;font-weight:700;margin:0 0 4px;letter-spacing:-.01em}
+.bd{font-size:14.5px;color:var(--sub);margin:0 0 14px}
+.thumbs{display:flex;gap:8px;margin:0 0 16px}
+.thumbs img{width:calc((100% - 16px)/3);border:1px solid var(--line);border-radius:7px;
+            display:block;background:#fff}
+.cta{display:block;width:100%;padding:17px;border-radius:14px;background:var(--acc);
+     color:var(--acc-ink);text-decoration:none;font-size:17px;font-weight:700;
+     text-align:center;border:0}
+.b35 .cta{background:var(--a35)} .b79 .cta{background:var(--a79)}
+.cta small{display:block;font-weight:500;font-size:12.5px;opacity:.86;margin-top:4px}
+.buy{display:block;text-align:center;padding:15px;border-radius:12px;background:var(--ink);
+     color:var(--paper);text-decoration:none;font-weight:700;font-size:15.5px;margin-top:9px}
+.soon{display:block;text-align:center;padding:15px;border-radius:12px;
+      border:1px dashed var(--line);color:var(--sub);font-size:14px;margin-top:9px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.price{display:flex;align-items:baseline;gap:10px;margin:4px 0 12px}
 .price b{font-size:30px;letter-spacing:-.02em}
 .price s{color:var(--sub);font-size:17px}
 .tag{display:inline-block;background:var(--gold);color:#3A2E10;font-size:12.5px;
-     font-weight:700;padding:3px 9px;border-radius:999px;vertical-align:middle}
-.buy{display:block;text-align:center;padding:17px;border-radius:14px;background:var(--ink);
-     color:var(--paper);text-decoration:none;font-weight:700;font-size:17px;margin-top:6px}
-.faq dt{font-weight:700;margin-top:18px}
-.faq dd{margin:6px 0 0;color:var(--sub)}
-footer{margin:52px 0 0;padding-top:22px;border-top:1px solid var(--line);
+     font-weight:700;padding:3px 9px;border-radius:999px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:12px 2px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--sub);width:34%;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+ul{padding-left:20px;margin:0}
+li{margin:8px 0;color:var(--sub);font-size:15px}
+.faq dt{font-weight:700;margin-top:17px}
+.faq dd{margin:5px 0 0;color:var(--sub);font-size:15px}
+.note{font-size:13.5px;color:var(--sub);text-align:center;margin:10px 0 0}
+footer{margin:48px 0 0;padding-top:20px;border-top:1px solid var(--line);
        font-size:13px;color:var(--sub);text-align:center}
-.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(251,248,243,.96);
-        backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:12px 20px;z-index:9}
-.sticky .wrap{display:flex;gap:12px;align-items:center;padding:0}
-.sticky .cta{padding:15px;font-size:16px;box-shadow:none}
 @media (prefers-color-scheme:dark){
-  :root{--paper:#16151A;--card:#1E1D23;--ink:#F1EEE8;--sub:#A5A2AC;--line:#312F38;--acc:#6C97DE}
-  .strip img{background:#fff}
-  .sticky{background:rgba(22,21,26,.96)}
+  :root{--paper:#16151A;--card:#1E1D23;--ink:#F1EEE8;--sub:#A5A2AC;--line:#312F38;
+        --acc:#6C97DE;--a35:#E58A99;--a57:#6C97DE;--a79:#5FBE9B}
+  .thumbs img{background:#fff}
 }
 </style>
 </head>
 <body>
 
 <header class="wrap">
-  <p class="eyebrow">5~7세 · 한글과 수</p>
+  <p class="eyebrow">3~9세 · 프린트해서 쓰는 워크북</p>
   <h1>하루 세 장, 15분.<br><em>프린트해서 주기만</em> 하면 됩니다.</h1>
-  <p class="lede">먼저 5장 뽑아서 아이한테 시켜 보세요.<br>안 앉으면 안 사시면 됩니다.</p>
-  <a class="cta" href="sample.pdf" download>
-    무료 샘플 5장 받기
-    <small>PDF 195KB · 이메일 안 받습니다</small>
-  </a>
-  <p class="note">바로 내려받아집니다. 가입도, 로그인도 없습니다.</p>
+  <p class="lede">나이에 맞는 샘플을 먼저 뽑아서 시켜 보세요.<br>안 앉으면 안 사시면 됩니다.</p>
 </header>
 
 <main class="wrap">
 
 <section>
-  <h2>샘플에 들어 있는 5장</h2>
-  <div class="strip">
-    <figure><img src="p1.jpg" alt="표지" loading="lazy"><figcaption>표지</figcaption></figure>
-    <figure><img src="p2.jpg" alt="자음 따라쓰기" loading="lazy"><figcaption>자음 따라쓰기</figcaption></figure>
-    <figure><img src="p3.jpg" alt="미로 찾기" loading="lazy"><figcaption>미로 찾기</figcaption></figure>
-    <figure><img src="p4.jpg" alt="개수 세기" loading="lazy"><figcaption>개수 세기</figcaption></figure>
-    <figure><img src="p5.jpg" alt="시계 읽기" loading="lazy"><figcaption>시계 읽기</figcaption></figure>
-    <figure><img src="p6.jpg" alt="도전 큰 미로" loading="lazy"><figcaption>도전 큰 미로</figcaption></figure>
+  <h2>몇 살인가요?</h2>
+  <p class="h2sub">고르시면 그 나이 샘플 5장이 바로 내려받아집니다. 가입도, 이메일도 없습니다.</p>
+
+  <div class="book b35">
+    <p class="age">3~5세</p>
+    <p class="bt">처음 잡는 연필</p>
+    <p class="bd">선 긋기 · 쉬운 자음과 모음 · 같은 그림 잇기 · 색칠. 하루 두 장, 10분.</p>
+    <div class="thumbs"><img src="b2_1.jpg" alt="선 긋기" loading="lazy"><img src="b2_2.jpg" alt="같은 그림 잇기" loading="lazy"><img src="b2_3.jpg" alt="쉬운 자음" loading="lazy"></div>
+    <a class="cta" href="sample-35.pdf" download>3~5세 샘플 받기<small>PDF 162KB</small></a>
+    <span class="soon">정식판 100쪽 · 스토어 등록 중</span>
   </div>
-  <p class="note" style="text-align:left">※ 뒤의 두 장은 정식판에 들어 있는 내용입니다.</p>
+
+  <div class="book b57">
+    <p class="age">5~7세</p>
+    <p class="bt">한글과 수</p>
+    <p class="bd">자음 14자부터 받침까지 · 더하기 빼기 · 시계 · 미로 30장. 하루 세 장, 15분.</p>
+    <div class="thumbs"><img src="p2.jpg" alt="자음 따라쓰기" loading="lazy"><img src="p3.jpg" alt="미로 찾기" loading="lazy"><img src="p4.jpg" alt="개수 세기" loading="lazy"></div>
+    <a class="cta" href="sample-57.pdf" download>5~7세 샘플 받기<small>PDF 195KB</small></a>
+    <a class="buy" href="https://smartstore.naver.com/officekmall/products/13739149282" target="_blank" rel="noopener">정식판 100쪽 · 29,900원</a>
+  </div>
+
+  <div class="book b79">
+    <p class="age">7~9세</p>
+    <p class="bt">받아쓰기와 구구단</p>
+    <p class="bd">받아쓰기 30장 · 구구단 · 두 자리 덧셈뺄셈 · 5분 단위 시계. 하루 세 장, 20분.</p>
+    <div class="thumbs"><img src="b3_1.jpg" alt="받아쓰기" loading="lazy"><img src="b3_2.jpg" alt="구구단" loading="lazy"><img src="b3_3.jpg" alt="몇 시 몇 분" loading="lazy"></div>
+    <a class="cta" href="sample-79.pdf" download>7~9세 샘플 받기<small>PDF 159KB</small></a>
+    <span class="soon">정식판 100쪽 · 스토어 등록 중</span>
+  </div>
 </section>
 
 <section>
@@ -111,30 +124,29 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid var(--line);
 </section>
 
 <section>
-  <h2>정식판은 이렇게 생겼습니다</h2>
+  <h2>한 권에 들어 있는 것</h2>
+  <p class="h2sub">세 권 모두 같은 구조입니다. 나이에 맞게 내용만 달라집니다.</p>
   <div class="box">
     <table>
-      <tr><td>한글 30장</td><td>자음 14자 → 모음 10자 → 글자 → 받침 → 섞어 쓰기</td></tr>
-      <tr><td>수 30장</td><td>숫자 쓰기 → 개수 세기 → 짝 잇기 → 더하기 → 빼기 → 시계</td></tr>
-      <tr><td>놀이 30장</td><td>미로 · 같은 모양 · 규칙 찾기 · 점 잇기 · 색칠</td></tr>
-      <tr><td>보너스 3장</td><td>내 이름 쓰기 · 11~20 두 자리 수 · 도전 큰 미로</td></tr>
-      <tr><td>그 밖에</td><td>보호자 안내 · 진도표 · 정답 3장 · 다 하면 주는 상장</td></tr>
-      <tr><td>형식</td><td>PDF 100쪽 · A4 300dpi · 몇 번이든 인쇄</td></tr>
+      <tr><td>분량</td><td>PDF 100쪽 · A4 300dpi</td></tr>
+      <tr><td>기간</td><td>30일 · 하루 두세 장</td></tr>
+      <tr><td>포함</td><td>보호자 안내 · 진도표 · 정답 · 다 하면 주는 상장</td></tr>
+      <tr><td>인쇄</td><td>횟수 제한 없음. 둘째가 쓸 때 다시 사지 않습니다</td></tr>
+      <tr><td>흑백</td><td>흑백 프린터로 다 됩니다</td></tr>
     </table>
   </div>
 </section>
 
 <section>
   <div class="box">
-    <span class="tag">25% 할인</span>
-    <div class="price"><b>29,900원</b><s>39,900원</s></div>
-    <ul style="color:var(--sub);font-size:15px">
-      <li>30일이면 한 권이 끝납니다. 오늘 뭘 시킬지 고민할 필요가 없습니다.</li>
-      <li>둘째가 쓸 때 다시 사지 않습니다. 틀린 장만 다시 뽑아도 됩니다.</li>
-      <li>흑백으로 뽑아도 다 됩니다.</li>
+    <span class="tag">준비 중</span>
+    <h2 style="margin-top:10px">세 권 세트</h2>
+    <div class="price"><b>59,900원</b><s>89,700원</s></div>
+    <ul>
+      <li>3~5세부터 7~9세까지. 동생이 크면 그대로 이어서 씁니다.</li>
+      <li>형제가 둘이면 한 세트로 둘 다 됩니다.</li>
+      <li>세 권 모두 스토어에 올라간 뒤 열립니다.</li>
     </ul>
-    <a class="buy" href="https://smartstore.naver.com/officekmall/products/13739149282"
-       target="_blank" rel="noopener">스마트스토어에서 보기</a>
   </div>
 </section>
 
@@ -143,8 +155,8 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid var(--line);
   <dl>
     <dt>배송되나요?</dt>
     <dd>아니요. 결제하시면 다운로드 링크를 문자로 보내드립니다. PDF 파일 하나입니다.</dd>
-    <dt>몇 살이 적당한가요?</dt>
-    <dd>한글을 처음 쓰는 5세부터 초등 입학 전 7세까지 봅니다. 아이마다 다르니 샘플을 먼저 보세요.</dd>
+    <dt>우리 아이 나이가 애매한데요.</dt>
+    <dd>샘플 두 개를 다 받아서 시켜 보세요. 앉아서 끝까지 하는 쪽이 맞는 나이입니다.</dd>
     <dt>컬러 프린터가 없는데요.</dt>
     <dd>흑백으로 다 됩니다. 색칠하기 장은 원래 선만 있습니다.</dd>
     <dt>학원에서 써도 되나요?</dt>
@@ -152,17 +164,11 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid var(--line);
   </dl>
 </section>
 
-<footer class="wrap">
+<footer>
   오피스케이몰 · 우리집 워크북<br>
   구매 전 무료 샘플을 먼저 확인하실 수 있습니다.
 </footer>
 </main>
-
-<div class="sticky">
-  <div class="wrap">
-    <a class="cta" href="sample.pdf" download>무료 샘플 5장 받기</a>
-  </div>
-</div>
 
 </body>
 </html>
